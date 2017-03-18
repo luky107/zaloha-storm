@@ -43,4 +43,11 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="pempty" value="&lt;?php if(!(empty($PARAMETERS$))): ?&gt;&#10;&#10;&lt;?php endif; ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
