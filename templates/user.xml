@@ -1,26 +1,18 @@
 <templateSet group="user">
-  <template name="php" value="&lt;?php $END$; ?&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="php" value="&lt;?php $END$; ?&gt;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="pifnoempy" value="&lt;?php if(!(empty($PARAMETERS$))){ echo $PARAMETERS$;} ?&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="pifnoempy" value="&lt;?php if(!(empty($PARAMETERS$))){ echo $PARAMETERS$;} ?&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="pconditionchecked" value="&lt;?php if($PARAMETERS$ == $CONTROL$){ echo &quot;checked&quot;;} ?&gt;" toReformat="false" toShortenFQNames="true">
-    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML" value="true" />
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="pconditionselected" value="&lt;?php if($PARAMETERS$ == $CONTROL$){ echo &quot;selected&quot;;} ?&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="pconditionchecked" value="&lt;?php if($PARAMETERS$ == $CONTROL$){ echo &quot;checked&quot;;} ?&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -28,7 +20,15 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="pExistEqualsSelected" value="&lt;?php if((!empty($OBJECT$)) &amp;&amp; ($PARAMETERS$ == $CONTROL$)){ echo &quot;selected&quot;;} ?&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="pconditionselected" value="&lt;?php if($PARAMETERS$ == $CONTROL$){ echo &quot;selected&quot;;} ?&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pExistEqualsSelected" value="&lt;?php if((!empty($OBJECT$)) &amp;&amp; ($PARAMETERS$ == $CONTROL$)){ echo &quot;selected&quot;;} ?&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
@@ -37,13 +37,13 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="deb" value="&lt;?php \LooKatMe\Helpers\Debug::output($END$); ?&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="deb" value="&lt;?php \LooKatMe\Helpers\Debug::output($END$); ?&gt;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="pempty" value="&lt;?php if(!(empty($PARAMETERS$))): ?&gt;&#10;&#10;&lt;?php endif; ?&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="pempty" value="&lt;?php if(!(empty($PARAMETERS$))): ?&gt;&#10;&#10;&lt;?php endif; ?&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
