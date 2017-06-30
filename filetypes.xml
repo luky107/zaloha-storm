@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="mapa" type="PHP" />
       <mapping pattern="list-readonly-disable" type="PHP" />
       <mapping pattern=".htpasswd" type="PLAIN_TEXT" />
       <mapping ext="pub" type="PLAIN_TEXT" />
